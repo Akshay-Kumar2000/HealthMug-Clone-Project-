@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  //slides
+  var imageData = [
+    {
+      image_url:
+        "https://static.oxinis.com/healthmug/image/healthmug/healthmug-logo.png",
+      img_descr: "logo",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/asset/454-ru.png",
+      img_descr: "Great discount with extra MobiKwik Cashback",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/asset/386-mu.png",
+      img_descr: "Get Free Online Consultation",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/asset/354-wn.jpg",
+      img_descr: "Doctor Registration Consult Patients Online",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/asset/528-po.png",
+      img_descr: "Top Brands & Best in Class Products",
+    },
+    //offerBanner
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/asset/10-sb.jpg",
+      img_descr: "offer Banner",
+    },
+    //topCategories
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/category/10000.png",
+      img_descr: "Deals",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/category/0.png",
+      img_descr: "Consult",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/category/213.png",
+      img_descr: "Allopathy",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/category/1.png",
+      img_descr: "Homeopathy",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/category/9.png",
+      img_descr: "Ayurveda",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/category/163.png",
+      img_descr: "Unani",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/category/122.png",
+      img_descr: "Nutrition & Suppliments",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/category/82.png",
+      img_descr: "Beuty & Personal Care",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/category/41.png",
+      img_descr: "Health Aid & Fitness",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/category/20.png",
+      img_descr: "Baby Care",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/category/38.png",
+      img_descr: "Sexual Wellness",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/asset/167-lw.jpg",
+      img_descr: "arjun tea",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/asset/391-ke.png",
+      img_descr: "15% Off",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/asset/526-gc.png",
+      img_descr: "mens wellness",
+    },
+    //Shop By Health Concern
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/disease/9-icon.png",
+      img_descr: "Arthritis & Rheumatism",
+    },
+    {
+      image_url:
+        "https://static.oxinis.com/healthmug/image/disease/34-icon.png",
+      img_descr: "Diabetis",
+    },
+    {
+      image_url:
+        "https://static.oxinis.com/healthmug/image/disease/49-icon.png",
+      img_descr: "Hair Fall",
+    },
+    {
+      image_url:
+        "https://static.oxinis.com/healthmug/image/disease/72-icon.png",
+      img_descr: "Low height",
+    },
+    {
+      image_url:
+        "https://static.oxinis.com/healthmug/image/disease/51-icon.png",
+      img_descr: "Headache & Migrane",
+    },
+    {
+      image_url:
+        "https://static.oxinis.com/healthmug/image/disease/79-icon.png",
+      img_descr: "Obesity",
+    },
+    {
+      image_url:
+        "https://static.oxinis.com/healthmug/image/disease/93-icon.png",
+      img_descr: "Snoring",
+    },
+    {
+      image_url:
+        "https://static.oxinis.com/healthmug/image/disease/83-icon.png",
+      img_descr: "Piles & Fissories",
+    },
+    //Shop By Top Brands
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/brand/1-100.jpg",
+      img_descr: "Dr. Reckweg",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/brand/3-100.jpg",
+      img_descr: "SBL",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/brand/2-100.jpg",
+      img_descr: "Wilmaar Schewabe India",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/brand/6-100.jpg",
+      img_descr: "Bakson",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/brand/193-100.jpg",
+      img_descr: "Hevert",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/brand/11-100.jpg",
+      img_descr: "Baidynath",
+    },
+    {
+      image_url: "https://static.oxinis.com/healthmug/image/brand/321-100.jpg",
+      img_descr: "Planet Ayurveda",
+    },
+    {
+        image_url:"https://static.oxinis.com/healthmug/image/brand/17-100.jpg"
+        img_descr:"Hamdard",
+    },
+    //Offer banner
+    {
+        image_url:"https://static.oxinis.com/healthmug/image/asset/15-ad.png",
+        img_descr:"5% OFF",
+    },
+    {
+        image_url:"https://static.oxinis.com/healthmug/image/asset/16-ad.png",
+        img_descr:"FREE DELIVERY",
+    },
+    {
+        image_url:"https://static.oxinis.com/healthmug/image/asset/22-eb.png",
+        img_descr:"Cash On Delivery",
+    },
+    //start consultation
+    {
+        image_url:"https://static.oxinis.com/healthmug/image/consultation/homeopathy-icon.jpg",
+        img_descr:"Homeopathy",
+    },
+    {
+        image_url:"https://static.oxinis.com/healthmug/image/consultation/unani-icon.jpg",
+        img_descr:"unani",
+    },
+    {
+        image_url:"https://static.oxinis.com/healthmug/image/consultation/ayurveda-icon.jpg",
+        img_descr:"Ayurveda",
+    }
+    {
+        image_url:"https://static.oxinis.com/healthmug/image/consultation/diet-nutrition-icon.jpg",
+        img_descr:"Diet/Nutrition"
+    }
+    {
+        image_url:"https://static.oxinis.com/healthmug/image/blog/article/205-banner-600.jpg",
+        img_descr:"Apple Image",
+    }
+    {
+        image_url:"https://static.oxinis.com/healthmug/image/blog/article/202-banner-400.jpg",
+        img_descr:"korean Skin Care",
+    }
+    {
+        image_url:"https://static.oxinis.com/healthmug/image/blog/article/3-banner-400.jpg",
+        img_descr:"Fruits and Vegatables",
+    }
+    {
+        image_url:"https://static.oxinis.com/healthmug/image/blog/article/4-banner-400.jpg",
+        img_descr:"7 Herbal teas",
+    }
+    {
+        image_url:"https://static.oxinis.com/healthmug/image/blog/article/2-banner-400.jpg",
+        image_url:"6 Essential Oils"
+    }
+  ];
+</script>
