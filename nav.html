@@ -97,7 +97,7 @@
             min-width: 160px;
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
-            /* width: 100%; */
+            width: 100%;
             left: 200px;
             top: auto;
         }
@@ -332,6 +332,9 @@
             </div>
         </div>
     </nav>
+    <div id="cart">
+
+    </div>
 </body>
 
 </html>
@@ -354,7 +357,7 @@
     //getting data from local storage
     var nutrition=JSON.parse(localStorage.getItem("nutrition"));
     var allopathy=JSON.parse(localStorage.getItem("allopyathi"));
-    
+
     function search(e){
         e.preventDefault();
         var ser=document.getElementById("search");
