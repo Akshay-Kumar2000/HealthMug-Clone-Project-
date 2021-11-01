@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation</title>
+    <!-- icon library -->
+    <script src="https://kit.fontawesome.com/5e8eec8caf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto&display=swap"
+        rel="stylesheet">
+    <style>
+        #search button {
+            width: 14%;
+            padding: 10px;
+            background: #51C9A6;
+            color: white;
+            font-size: 17px;
+            border: 1px solid #EDEDED;
+            border-left: none;
+        }
+
+        #search>input {
+            padding: 10px;
+            font-size: 17px;
+            border: 1px solid #EDEDED;
+            float: left;
+            width: 80%;
+        }
+
+        .side_icon button {
+            width: 5%;
+            padding: 10px;
+            color: #898989;
+            font-size: 25px;
+            border: none;
+            background-color: white;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 5%;
+        }
+
+        #search {
+            width: 30%;
+        }
+
+        .side_icon {
+            font-size: 12px;
+        }
+
+        .navigation img {
+            height: 100%;
+        }
+
+        .side_icon>p {
+            margin-top: 0%;
+        }
+
+        nav {
+            position: fixed;
+            width: 100%;
+        }
+
+        nav.scrolled {
+            background: white;
+        }
+
+        #navigate {
+            display: flex;
+            flex-direction: column;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .dropdown_button {
+            background-color: #51C9A6;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown_content {
+            display: none;
+            position: fixed;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            /* width: 100%; */
+            left: 200px;
+            top: auto;
+        }
+
+        .dropdown_content a {
+            color: black;
+            text-decoration: none;
+            display: block;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .dropdown_content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown_content {
+            display: flex;
+        }
+
+        .dropdown:hover .dropdown_button {
+            background-color: white;
+            color: black;
+        }
+
+        .navigation_bottom {
+            background-color: #51C9A6;
+            justify-content: center;
+            gap:1%;
+        }
+
+        .dropdown_box1,
+        .dropdown_box2 {
+            text-align: left;
+            width: 300px;
+        }
+
+        .dropdown_box1 a,
+        .dropdown_box2 a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+
+        .dropdown_box3 {           
+            height: 40%;
+        }
+
+        .dropdown_box3 {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .dropdown_box1>h3 {
+            color: #51C9A6;
+            text-decoration: under;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navigate">
+        <ul class="navigation">
+            <img src="https://static.oxinis.com/healthmug/image/healthmug/healthmug-logo.png">
+            <form id="search">
+                <input id="search_input" placeholder="Search Products">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <div class="side_icon">
+                <button><i class="fas fa-envelope"></i>
+                </button>
+                <p>Contact US</p>
+            </div>
+            <div class="side_icon">
+                <button><i class="fas fa-wallet"></i>
+                </button>
+                <p>Sell with us</p>
+            </div>
+            <div class="side_icon">
+                <button><i class="fas fa-user"></i>
+                </button>
+                <p>Sign In</p>
+            </div>
+            <div class="side_icon">
+                <button id="side_cart"><i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+        </ul>
+        <div class="navigation_bottom navigation">
+            <div class="dropdown">
+                <button class="dropdown_button">Alopathic</button>
+                <div class="dropdown_content navigation">
+                    <div class="dropdown_box1">
+                        <h3>Categories</h3>
+                        <a href="#">
+                            <h3>Allopathic Medicines <i class="fas fa-caret-right"></i></h3>
+                        </a>
+                        <a href="#">
+                            <h3>Tablets & Capsules <i class="fas fa-caret-right"></i></h3>
+                        </a>
+                        <a href="#">
+                            <h3>Syrups & Suspensions <i class="fas fa-caret-right"></i></h3>
+                        </a>
+                        <a href="#">
+                            <h3>Creams & Ointments <i class="fas fa-caret-right"></i></h3>
+                        </a>
+                        <a href="#">
+                            <h3>Inhalers & Respules <i class="fas fa-caret-right"></i></h3>
+                        </a>
+                        <a href="#">
+                            <h3>Oral Drops <i class="fas fa-caret-right"></i></h3>
+                        </a>
+                        <a href="#">
+                            <h3>Eye & Ear Drops <i class="fas fa-caret-right"></i></h3>
+                        </a>
+                        <a href="#">
+                            <h3>Nasal Drops & Spray <i class="fas fa-caret-right"></i></h3>
+                        </a>
+                        <a href="#">
+                            <h3>Injections & Infusions <i class="fas fa-caret-right"></i></h3>
+                        </a>
+                    </div>
+                    <div class="dropdown_box2">
+                        <a href="#">
+                            <h3>Top Brands <i class="fas fa-caret-right"></i></h3>
+                        </a>
+                        <a href="#">Sun Pharma</a>
+                        <a href="#">Cipla</a>
+                        <a href="#">Lupin</a>
+                        <a href="#">Pfizer</a>
+                        <a href="#">Abbott</a>
+                        <a href="#">Mankind Pharma</a>
+                        <a href="#">Dr. Reddys</a>
+                        <a href="#">Glenmark Pharma</a>
+                    </div>
+                    <div class="dropdown_box3">
+                        <img src="https://static.oxinis.com/healthmug/image/ad/allopathy-2.jpg" alt="alopathy">
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_button">Nutrition</button>
+                <div class="dropdown_content navigation">
+                    <div class="dropdown_box1">
+                        <a href="#">
+                            <h3> Sports Nutrition <i class="fas fa-caret-right"></i></h3>
+                        </a>
+                        <a href="#">
+                            Proteins
+                        </a>
+                        <a href="#">
+                            Fat Burner
+                        </a>
+                        <a href="#">
+                            Weight Gainers
+                        </a>
+                        <a href="#">
+                            Pre Post Workout
+                        </a>
+                        <a href="#">
+                            Aminos
+                        </a>
+                        <a href="#">
+                            Creatines
+                        </a>
+                        <a href="#">
+                            <h3>Vitamin & Ditery Suppliment <i class="fas fa-caret-right"></i></h3>
+                        </a>
+                        <a href="#">
+                            <h3>Organic Products <i class="fas fa-caret-right"></i></h3>
+                        </a>
+                        <a href="#">Organic Foods</a>
+                        <a href="#">Coffee & Tea</a>
+                        <a href="#">Ghee</a>
+                        <a href="#">Atta/Flour</a>
+                    </div>
+                    <div class="dropdown_box2">
+                        <a href="#">
+                            <h3>Health Food & Drinks <i class="fas fa-caret-right"></i></h3>
+                        </a>
+                        <a href="#">Health Food & Drinks</a>
+                        <a href="#">Honey, Sugar & Jaggery</a>
+                        <a href="#">Oils</a>
+                        <a href="#">Herbal & Vegetagle Juices</a>
+                        <a href="#">Health Drinks</a>
+                        <a href="#">Health Snacks &Bars</a>
+                        <a href="#">Sugar Free</a>
+                        <a href="#">Murabba</a>
+                        <a href="#">Chawanprash</a>
+                        <a href="#">Edible Seeds</a>
+                        <a href="#">Green Teas</a>
+                        <a href="#">DIgestives</a>
+                    </div>
+                    <div class="dropdown_box3">
+                        <img src="https://static.oxinis.com/healthmug/image/ad/nutrition-2.jpg" alt="obesity">
+                        <img src="https://static.oxinis.com/healthmug/image/ad/nutrition-3.jpg" alt="gastric">
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_button">Disease</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_button">Homeopathy</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_button">Ayurveda</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_button">Unani</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_button">Personal</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_button">Care</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_button">Baby</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_button">Sexual</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_button">Wellness</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_button">Fitness</button>
+            </div>
+            <div class="dropdown">
+                <button class="dropdown_button">Consultation</button>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
+<script>
+    var navbar = document.querySelector("nav");
+
+    // for fixing scroll of nav bar
+    window.onscroll = function () {
+        //pageoffset or scroll
+        if (window.pageYOffset > 250) {
+            navbar.classList.add('scrolled')
+        } else {
+            navbar.classList.remove('scrolled')
+        }
+    }
+
+    //search function
+
+    document.getElementById("search").addEventListener("submit",search);
+    //getting data from local storage
+    var nutrition=JSON.parse(localStorage.getItem("nutrition"));
+    var allopathy=JSON.parse(localStorage.getItem("allopyathi"));
+    
+    function search(e){
+        e.preventDefault();
+        var ser=document.getElementById("search");
+        console.log(ser.search_input.value);
+
+        var items=[];
+        for(var i=0; i<nutrition.length; i++){
+            if(nutrition[i].prod_name.includes(ser.search_input.value))
+                items.push(nutrition[i]);
+        }
+        for(i=0; i<allopathy.length; i++){
+            if(allopathy[i].prod_name.includes(ser.search_input.value))
+                items.push(allopathy[i]);
+        }
+
+        //display searched items
+    }
+
+</script>
