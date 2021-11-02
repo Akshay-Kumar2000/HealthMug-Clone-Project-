@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color: rgb(228, 228, 228);
+      }
+        .container{
+          background-color: rgb(251, 251, 251);
+            display: grid;
+            grid-template-columns:  auto auto auto auto auto auto auto auto;
+            grid-template-rows: auto auto;
+            grid-gap: 8%;
+            margin-top: 1px;
+            margin-bottom: 10px;
+            padding: 3%;
+            font-size: 14px;
+        }
+       .container img{
+          border-radius: 50%;
+          width: 140px;
+          padding: 4%;
+          border: 3.5px solid rgb(247, 241, 232);
+        }
+        h2{
+          text-align: left;
+          background-color: rgb(255, 255, 255);
+          margin-bottom: 0px;
+        }
+       h3{
+         margin-left: 45%;
+         color: rgb(62, 62, 62);
+       }
+        a{text-decoration: none;
+          color: rgb(29, 25, 25);
+        }
+        #healthDiv{
+          margin-top: 100px;
+        }
+      
+      
+        @media screen and (min-width: 0px) and (max-width: 600px) {
+          .container {
+         display: grid;
+         grid-template-columns:  auto auto auto ;
+         grid-template-rows: auto auto auto auto;
+         grid-gap: 8%;
+     }
+     .container img{
+          border-radius: 50%;
+          width: 80px;
+          border: 3.5px solid rgb(247, 241, 232);
+          padding: 8%;
+        }
+       
+        }
+        @media screen and (min-width: 600px) and (max-width:1300px) {
+          .container {
+         
+         display: grid;
+         grid-template-columns:  auto auto auto auto ;
+         grid-template-rows: auto auto;
+         grid-gap: 8%;
+     }
+ 
+     .container img{
+          border-radius: 50%;
+          width: 130px;
+          border: 3.5px solid rgb(253, 251, 248);
+          padding: 5%;
+        }
+        }
+        @media screen and (min-width: 1300px) {
+          .container {
+         
+         display: grid;
+         grid-template-columns:  auto auto auto auto auto auto auto auto;
+         grid-gap: 2%;
+     }
+
+     .container img{
+          border-radius: 50%;
+          width: 130px;
+          border: 3.5px solid rgb(247, 241, 232);
+          padding: 3%;
+        }
+        }
+      #topBrand{
+        border: none;
+      }
+      nav{
+        background-color: rgb(104, 199, 9);
+        height: 30px;
+        color: whitesmoke;
+        display: flex;
+      }
+    </style>
+</head>
+<body>
+    <script>
+    var topCategory = [
+      {name : "Deals",
+       img : "https://static.oxinis.com/healthmug/image/category/10000.png"},
+       {name : "Consult",
+       img : "https://static.oxinis.com/healthmug/image/category/0.png"},
+       {name : "Allopathy",
+       img : "https://static.oxinis.com/healthmug/image/category/213.png"},
+       {name : "Homeopathy",
+       img : "https://static.oxinis.com/healthmug/image/category/1.png"},
+       {name : "Ayurveda",
+       img : "https://static.oxinis.com/healthmug/image/category/9.png"},
+       {name : "Unani",
+       img : "https://static.oxinis.com/healthmug/image/category/163.png"},
+       {name : "Nutrition & Supplements",
+       img : "https://static.oxinis.com/healthmug/image/category/122.png"},
+       {name : "Beauty & Personal Care",
+       img : "https://static.oxinis.com/healthmug/image/category/82.png"},
+       {name : "Health Aid & Fitnaess ",
+       img : "https://static.oxinis.com/healthmug/image/category/41.png"},
+       {name : "Baby Care",
+       img : "https://static.oxinis.com/healthmug/image/category/20.png"},
+       {name : "Sexual Wellness",
+       img : "https://static.oxinis.com/healthmug/image/category/38.png"}
+    ];
+  var body = document.querySelector("body");
+  var mainDiv = document.createElement("div");
+  mainDiv.setAttribute("class", "container");
+  var head = document.createElement("h2");
+  head.textContent = "TOP CATOGERIES";
+  body.append(head,mainDiv);
+  showTopCatogeries();
+
+  function showTopCatogeries() {
+    topCategory.map(function (item) {
+      var imageDiv = document.createElement("div");
+      var img = document.createElement("img");
+      var anchor = document.createElement("a");
+      anchor.setAttribute("href","");
+      img.setAttribute("src", item.img);
+      var h1 = document.createElement("h3");
+      h1.textContent = item.name;
+      imageDiv.addEventListener("mouseenter", function(){
+        h1.style.color = "#90EE90";
+      });
+      imageDiv.addEventListener("mouseleave", function(){
+        h1.style.color = "black";
+      })
+      imageDiv.append(img, h1);
+      anchor.append(imageDiv);
+      mainDiv.append(anchor);
+    });
+  }
+  </script>
+  <script>
+  var HealthConcern = [
+      {name : "Arthritis & Rheumatism",
+       img : "https://static.oxinis.com/healthmug/image/disease/9-icon.png"},
+       {name : "Diabetes",
+       img : "https://static.oxinis.com/healthmug/image/disease/34-icon.png"},
+       {name : "Hair Fall",
+       img : "https://static.oxinis.com/healthmug/image/disease/49-icon.png"},
+       {name : "Low Height",
+       img : "https://static.oxinis.com/healthmug/image/disease/72-icon.png"},
+       {name : "Headache Magraine",
+       img : "https://static.oxinis.com/healthmug/image/disease/51-icon.png"},
+       {name : "Obesity",
+       img : "https://static.oxinis.com/healthmug/image/disease/79-icon.png"},
+       {name : "Soring",
+       img : "https://static.oxinis.com/healthmug/image/disease/93-icon.png"},
+       {name : "piles & Fissures",
+         img : "https://static.oxinis.com/healthmug/image/disease/83-icon.png"}
+
+    ];
+  var healthdiv = document.createElement("div");
+  healthdiv.setAttribute("class", "container");
+  var head = document.createElement("h2");
+  head.textContent = "SHOP HEALTH CONCERN";
+  body.append(head,healthdiv);
+  healthConcern();
+
+  function   healthConcern() {
+    HealthConcern.map(function (item) {
+      var imageDiv = document.createElement("div");
+      var img = document.createElement("img");
+      var anchor = document.createElement("a");
+      anchor.setAttribute("href","");
+      img.setAttribute("src", item.img);
+      img.setAttribute("id","healthImg");
+      var h1 = document.createElement("h3");
+      h1.textContent = item.name;
+      imageDiv.addEventListener("mouseenter", function(){
+        h1.style.color = "#90EE90";
+      });
+      imageDiv.addEventListener("mouseleave", function(){
+        h1.style.color = "black";
+      })
+      imageDiv.append(img, h1);
+      anchor.append(imageDiv);
+      healthdiv.append(anchor);
+    });
+  }
+  var topBrands = [
+    {name: "Dr.Sandeep",
+      img : "https://static.oxinis.com/healthmug/image/brand/1-100.jpg"},
+      {name: "SBL",
+      img : "https://static.oxinis.com/healthmug/image/brand/3-100.jpg"},
+      {name: "Willmar Scheweb India",
+      img : "https://static.oxinis.com/healthmug/image/brand/2-100.jpg"},
+      {name: "Bakson",
+      img : "https://static.oxinis.com/healthmug/image/brand/6-100.jpg"},
+      {name: "Hevert",
+      img : "https://static.oxinis.com/healthmug/image/brand/193-100.jpg"},
+      {name: "BaidYanath",
+      img : "https://static.oxinis.com/healthmug/image/brand/11-100.jpg"},
+      {name: "Planet Ayurveda",
+      img : "https://static.oxinis.com/healthmug/image/brand/321-100.jpg"},
+      {name: "Hamdard",
+      img : "https://static.oxinis.com/healthmug/image/brand/17-100.jpg"},
+  ];
+  var topBrand = document.createElement("div");
+  topBrand.setAttribute("class", "container");
+  var head = document.createElement("h2");
+  head.textContent = "SHOP BY TOP BRANDS";
+  body.append(head,topBrand);
+  topBrandshow();
+
+  function   topBrandshow() {
+    topBrands.map(function (item) {
+      var imageDiv = document.createElement("div");
+      var img = document.createElement("img");
+      var anchor = document.createElement("a");
+      anchor.setAttribute("href","");
+      img.setAttribute("src", item.img);
+      img.setAttribute("id","topBrand");
+      var h1 = document.createElement("h3");
+      h1.textContent = item.name;
+      imageDiv.addEventListener("mouseenter", function(){
+        h1.style.color = "#90EE90";
+      });
+      imageDiv.addEventListener("mouseleave", function(){
+        h1.style.color = "black";
+      })
+      imageDiv.append(img, h1);
+      anchor.append(imageDiv);
+      topBrand.append(anchor);
+    });
+  }
+    </script>
+</body>
+</html>
