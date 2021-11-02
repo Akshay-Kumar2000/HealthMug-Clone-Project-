@@ -9,7 +9,7 @@
       body{
         background-color: rgb(228, 228, 228);
       }
-        .container{
+        .topcat{
           background-color: rgb(251, 251, 251);
             display: grid;
             grid-template-columns:  auto auto auto auto auto auto auto auto;
@@ -20,7 +20,7 @@
             padding: 3%;
             font-size: 14px;
         }
-       .container img{
+       .topcat img{
           border-radius: 50%;
           width: 140px;
           padding: 4%;
@@ -44,13 +44,13 @@
       
       
         @media screen and (min-width: 0px) and (max-width: 600px) {
-          .container {
+          .topcat {
          display: grid;
          grid-template-columns:  auto auto auto ;
          grid-template-rows: auto auto auto auto;
          grid-gap: 8%;
      }
-     .container img{
+     .topcat img{
           border-radius: 50%;
           width: 80px;
           border: 3.5px solid rgb(247, 241, 232);
@@ -59,7 +59,7 @@
        
         }
         @media screen and (min-width: 600px) and (max-width:1300px) {
-          .container {
+          .topcat {
          
          display: grid;
          grid-template-columns:  auto auto auto auto ;
@@ -67,7 +67,7 @@
          grid-gap: 8%;
      }
  
-     .container img{
+     .topcat img{
           border-radius: 50%;
           width: 130px;
           border: 3.5px solid rgb(253, 251, 248);
@@ -75,14 +75,14 @@
         }
         }
         @media screen and (min-width: 1300px) {
-          .container {
+          .topcat {
          
          display: grid;
          grid-template-columns:  auto auto auto auto auto auto auto auto;
          grid-gap: 2%;
      }
 
-     .container img{
+     .topcat img{
           border-radius: 50%;
           width: 130px;
           border: 3.5px solid rgb(247, 241, 232);
@@ -128,7 +128,7 @@
     ];
   var body = document.querySelector("body");
   var mainDiv = document.createElement("div");
-  mainDiv.setAttribute("class", "container");
+  mainDiv.setAttribute("class", "topcat");
   var head = document.createElement("h2");
   head.textContent = "TOP CATOGERIES";
   body.append(head,mainDiv);
@@ -176,7 +176,7 @@
 
     ];
   var healthdiv = document.createElement("div");
-  healthdiv.setAttribute("class", "container");
+  healthdiv.setAttribute("class", "topcat");
   var head = document.createElement("h2");
   head.textContent = "SHOP HEALTH CONCERN";
   body.append(head,healthdiv);
@@ -222,7 +222,7 @@
       img : "https://static.oxinis.com/healthmug/image/brand/17-100.jpg"},
   ];
   var topBrand = document.createElement("div");
-  topBrand.setAttribute("class", "container");
+  topBrand.setAttribute("class", "topcat");
   var head = document.createElement("h2");
   head.textContent = "SHOP BY TOP BRANDS";
   body.append(head,topBrand);
