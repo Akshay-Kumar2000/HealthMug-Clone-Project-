@@ -8,13 +8,13 @@
      <style>
 a{
              text-decoration: none;
-             color: rgb(73, 73, 73);
+             color: rgb(4, 4, 4);
          }
 .container{
              display: grid;
-             grid-template-columns: 400px 400px 400px;
-             grid-template-rows: 400px;
-             grid-gap: 20px;
+             grid-template-columns: auto auto auto auto;
+             grid-template-rows: 350px;
+             grid-gap: 10px;
              margin-left: 21%;
              background-color: rgb(255, 255, 255);
          }
@@ -28,75 +28,103 @@ li{
               margin-left: -15%;
               list-style: none;
          }
-h3{margin-left: 4%;}
+         h3{
+             margin-left: 5%;
+         }
+  p{margin-left: 4%;
+    font-family : "Roboto, sans-serif";
+    font-size: 12px;}
          
 .sidenav {
-               height: auto;
                width: 20%;
-               position: fixed; 
+               height: 100%;
                background-color: rgb(255, 255, 255); 
                padding-top: 20px;
                margin-top: -5%;
                font-size: 12px;
+               font-family : "Roboto, sans-serif";
+               float: left;
+               position:fixed;
+               overflow: scroll;
                }
-h2{margin-left: 21%;background-color: rgb(245, 245, 245);margin-bottom: 0%;}
-input{
-     margin-left: 8%;
-     margin-top: 2%;
-     
-}
-#search{
-     width: 100px;
-}
-.icon{
-     width: 20px;
-     float: right;
-     margin-right: 15px;
-     margin-top: 15px;
-}
-.icon:hover{
-     transform: translate3d(1.5);
-}
-@media screen and (min-width: 0px) and (max-width: 1000px) {
-     .container{
-             display: grid;
-             grid-template-columns: auto auto;
-             grid-gap: 20px;
-             margin-left: 25%;
-             background-color: rgb(255, 255, 255);
+                h2{margin-left: 21%;background-color: rgb(245, 245, 245);margin-bottom: 0%; font-family:" Roboto, sans-serif";}
+                input{
+                    margin-left: 10%;
+                    margin-top: 2%;
+                    
+                }
+                #search{
+                    width: 100px;
+                }
+                i{
+                    width: 30px;
+                    height: 30px;
+                    float: right;
+                    color: black;
+                    font-size: 25px;
+                }
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+    .container{
+        display: grid;
+        width: 80%;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+        margin-left: 21%;
+        background-color: rgb(255, 255, 255);
+        
          }
-         .sidenav {
-               height: 80%;
-               width: 20%; 
-               background-color: rgb(255, 255, 255); 
-               padding-top: 4px;
-               margin-top: -5%;
-               font-size: 8px;
-               }
+    .sidenav {
+        height: 100%;
+        width: 20%; 
+        background-color: rgb(255, 255, 255); 
+        padding-top: 4px;
+        margin-top: -5%;
+        overflow: scroll;
+        }
      #search{
-     width: 100px;
+        width: 100px;
 }
 }
 span{
      font-weight: bolder;
      margin-left: 30px;
+     color: black;
 }
 #ads{
-     display: grid;
-     grid-template-columns: auto auto auto;
+     display: flex;
      margin-left: 21%;
+     justify-content: center;
 }
 #ads img{
      width: 33%;
-     
 }
+.product{
+    height : 320px;
+    color: rgb(72, 72, 71);
+    font-family: "Roboto, sans-serif";
+    font-weight: bolder;
+}
+.medicine{
+    margin-left: 15%;
+}
+.name{
+    color: black;
+    font-size: 14px;
+}
+#allopathySide{
+    font-size: 20px;
+}
+.strike{
+    color: rgb(75, 75, 75);
+}
+
      </style>
 </head>
 <body>
      <div id="ads"><a href=""><img src="https://static.oxinis.com/healthmug/image/asset/356-ts-480.png" alt=""><img src="https://static.oxinis.com/healthmug/image/asset/388-mf-480.png" alt=""><img src="https://static.oxinis.com/healthmug/image/asset/19-bh-480.png" alt=""></a></div>
     <div class="sidenav">
          <ul>
-              <li><h3><a href="">Allopathy</a></h3></li>
+              <div id="allopathySide"><a href="">Allopathy</a></div>
                <ul>
                <li><a href="">Allopathic medicines</a></li>
               <li><a href="">Tablets & Capsules</a></li>
@@ -126,408 +154,415 @@ span{
        <a href=""> <input type="checkbox" value=""></a><label for="">Mankind Pharma</label><br>
        <a href=""> <input type="checkbox" value=""></a><label for="">Lupin</label><br>
        <a href=""> <input type="checkbox" value=""></a><label for="">Hegde and Hegde</label><br>
-       
-       
        <hr>
       </div>
       </div>
-</body>
-</html>
-<script>
-    var allopyathi = [
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/117616-4-200.jpg",
-            prod_name:"Neurobion Forte Tablet (30tab)",
-            prod_descr:"Helps to counter Vitamin B deficiency, and assists in promoting a healthy nervous system",
-            real_price:34,
-            prod_price:29
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/87220-1-200.jpg",
-            prod_name:"Candid Cream (50g)",
-            prod_descr:"It is used in the treatment of fungal skin infections such as ringworm, athlete’s foot, nappy rash, sweat rash, and vaginal thrush",
-            real_price:153,
-            prod_price:130
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/117573-4-200.jpg",
-            prod_name:"Evion Capsule (400mg) (10caps)",
-            prod_descr:"Assists in managing the levels of Vitamin E in the body, contains anti-oxidants ",
-            real_price:32,
-            prod_price:27
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/127856-1-200.jpg ",
-            prod_name:"Salicylic Acid I.P. (20g)",
-            prod_descr:"Salicylic Acid for better skin and Keratolytictherapy",
-            real_price:70,
-            prod_price:69
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/110693-1-200.jpg",
-            prod_name:"Limcee Chewable Tablet Orange (15tab)",
-            prod_descr:"Orange flavored chewable tablet for boosting immunity and treating deficiency of vitamin C",
-            real_price:23,
-            prod_price:20
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/97147-1-200.jpg ",
-            prod_name:"Shelcal Tablet (15tab)",
-            prod_descr:"Helps in strengthening bones and teeth",
-            real_price:108,
-            prod_price:92
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/112434-3-200.jpg",
-            prod_name:"Refresh Tears Eye Drop (10ml)",
-            prod_descr:"Helps in relieving pain and provides comfort in dry eyes by producing artificial tears",
-            real_price:143,
-            prod_price:122
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/79425-1-200.jpg ",
-            prod_name:"Calcirol Sachet 60K (1g)",
-            prod_descr:"Assists in keeping the bones and teeth strong and healthy",
-            real_price:56,
-            prod_price:48
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/127819-1-200.jpg",
-            prod_name:"Hydrogen Peroxide Solution (100ml)",
-            prod_descr:"Hydrogen Peroxide solution with multiple health benefits",
-            real_price:32,
-            prod_price:31
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/75253-1-200.jpg",
-            prod_name:"Abbott Vitamin A Chewable Tablet (10tab)",
-            prod_descr:"Abbott Vitamin A Chewable Tablet helps in the growth and strength of bone",
-            real_price:7,
-            prod_price:6
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/99350-1-200.jpg",
-            prod_name:"Galact Granules Elaichi (200g)",
-            prod_descr:"It is specially formulated for breast feeding mothers",
-            real_price:383,
-            prod_price:226
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/115352-4-200.jpg",
-            prod_name:"Dexorange Capsule (30caps)",
-            prod_descr:"Helps prevent anemia and helps manage vitamin and iron deficiencies",
-            real_price:141,
-            prod_price:120
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/102286-1-200.jpg ",
-            prod_name:"Becadexamin Soft Gelatin Capsule (30caps)",
-            prod_descr:"It is used to improve your blood circulation, boost your immunity, and help you sleep better",
-            real_price:42,
-            prod_price:36
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/104411-1-200.jpg",
-            prod_name:"Becosules Z Capsule (20caps)",
-            prod_descr:"Helps keep the skin fresh and healthy, assists in boosting the defense system of the body",
-            real_price:45,
-            prod_price:38
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/86288-1-200.jpg",
-            prod_name:"Becozinc Capsule (30caps)",
-            prod_descr:"Helps in weight management, strengthens defense system of body",
-            real_price:47,
-            prod_price:45
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/117572-2-200.jpg",
-            prod_name:"Evion Capsule (200mg) (10caps)",
-            prod_descr:"Assists in managing the levels of Vitamin E in the body, contains anti-oxidants ",
-            real_price:17,
-            prod_price:14
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/94910-1-200.jpg",
-            prod_name:"Revital H Soft Gel Capsule (10caps)",
-            prod_descr:"For daily health and a fresh mind",
-            real_price:110,
-            prod_price:94
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/117646-1-200.jpg",
-            prod_name:"Seven Seas Original Cod Liver Oil Capsule (100caps)",
-            prod_descr:"Codliver oil softgel capsules for overall health and wellbeing",
-            real_price:290,
-            prod_price:247
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/127820-1-200.jpg",
-            prod_name:"Hydrogen Peroxide Solution (400ml)",
-            prod_descr:"Hydrogen Peroxide solution with multiple health benefits",
-            real_price:74,
-            prod_price:73
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/137710-1-200.jpg",
-            prod_name:"Nicotex Chewing Gums Tin Box Sugar Free (4mg) Mint Plus (25pcs)",
-            prod_descr:"Sugar Free nicotine chewing gums to help you quit smoking, comes in a tin box",
-            real_price:259,
-            prod_price:220
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/84252-1-200.jpg",
-            prod_name:"Cipladine Ointment (10g)",
-            prod_descr:"Used for the prevention of infections in wounds and cuts",
-            real_price:26,
-            prod_price:24
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/78518-1-200.jpg",
-            prod_name:"New A to Z Gold Soft Gelatin Capsule (15caps)",
-            prod_descr:"Helps to overcome fatigue, exhaustion, stress, and weakness",
-            real_price:180,
-            prod_price:153
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/112671-1-200.jpg",
-            prod_name:"Zincovit Syrup (200ml)",
-            prod_descr:"Zincovit Syrup helps boost immunity and prevent and manage nutritional deficiencies",
-            real_price:135,
-            prod_price:115
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/86428-1-200.jpg",
-            prod_name:"Econorm Sachet (1Sachet)",
-            prod_descr:"Helps in treating diarrhea and restores balance of bacteria in stomach",
-            real_price:52,
-            prod_price:44
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/94914-1-200.jpg",
-            prod_name:"Revital H Woman Tablet (30tab)",
-            prod_descr:"For a healthy and strong woman with a fresh mind",
-            real_price:345,
-            prod_price:297
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/84334-3-200.jpg",
-            prod_name:"Clocip Dusting Powder (100g)",
-            prod_descr:"anti-fungal powder to treat infections and rashes",
-            real_price:116,
-            prod_price:113
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/127857-1-200.jpg",
-            prod_name:"Salicylic Acid I.P. (400g)",
-            prod_descr:"Salicylic Acid for better skin and Keratolytictherapy",
-            real_price:580,
-            prod_price:568
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/137438-1-200.jpg",
-            prod_name:"Nicotex Chewing Gums Sugar Free (4mg) Mint Plus (9pcs)",
-            prod_descr:"Sugar free nicotine chewing gums that helps you quit smoking",
-            real_price:96,
-            prod_price:82
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/110613-3-200.jpg",
-            prod_name:"Ostocalcium B12 Child Syrup Banana (200ml)",
-            prod_descr:"Ostocalcium B12 Child Syrup Banana (200ml)",
-            real_price:158,
-            prod_price:128
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/112670-1-200.jpg",
-            prod_name:"Zincovit Drop (15ml)",
-            prod_descr:"Zincovit Drops is a multi-vitamin which make it an important dietary supplement for the growth of children",
-            real_price:50,
-            prod_price:43
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/135283-1-200.jpg",
-            prod_name:"Digene Tablet Mint (15tab)",
-            prod_descr:"Abbott Digene Tablet helps to relieve symptoms of extra gas such as bloating and feeling of discomfort in the stomach",
-            real_price:19,
-            prod_price:16
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/86249-1-200.jpg",
-            prod_name:"Antoxid HC Soft Gelatin Capsule (30caps)",
-            prod_descr:"Helps to protect skin by reducing oxidative stress, improves vision",
-            real_price:487,
-            prod_price:414
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/137288-1-200.jpg",
-            prod_name:"Prolyte ORS Ready To Drink Apple (200ml)",
-            prod_descr:"ORS ready to drink supplement for cases of vomiting, diarrhea or loss of liquids",
-            real_price:29,
-            prod_price:25
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/105072-2-200.jpg",
-            prod_name:"Meganeuron OD Plus Capsule (10caps)",
-            prod_descr:"It is a medicine which has a combination of medicines that is used in the treatment of vitamin and mineral deficiencies",
-            real_price:129,
-            prod_price:110
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/100856-2-200.jpg",
-            prod_name:"Corcium Tablet (15tab)",
-            prod_descr:"Calcium Tablets for healthy and strong bones, support nerve functions",
-            real_price:174,
-            prod_price:148
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/108652-4-200.jpg",
-            prod_name:"dolo tab (15 tab)",
-            prod_descr:"For managing raised body temperatures and helping relieve body pain",
-            real_price:30,
-            prod_price:26
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/84829-1-200.jpg",
-            prod_name:"Ibugesic ASP Tablet (10tab)",
-            prod_descr:"cipla",
-            real_price:71,
-            prod_price:60
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/110615-2-200.jpg",
-            prod_name:"Ostocalcium Plus Chewable Tablet (30tab)",
-            prod_descr:"Calcium and Vitamin d3 chewable tablets for strong bones and body",
-            real_price:178,
-            prod_price:151
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/98459-1-200.jpg",
-            prod_name:"Tryptomer Tablet (10mg) (30tab)",
-            prod_descr:"Wockhardt Ltd",
-            real_price:76,
-            prod_price:65
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/137436-1-200.jpg",
-            prod_name:"Nicotex Chewing Gums Sugar Free (4mg) Paan (9pcs)",
-            prod_descr:"Sugar free nicotine chewing gums that helps you quit smoking",
-            real_price:105,
-            prod_price:89
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/94911-2-200.jpg",
-            prod_name:"Revital H Soft Gel Capsule (30caps)",
-            prod_descr:"For daily health and a fresh mind",
-            real_price:310,
-            prod_price:264
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/105067-1-200.jpg",
-            prod_name:"Megaheal Gel (50g)",
-            prod_descr:"Megaheal Gel acts as an antiseptic and skin disinfectant that helps in preventing bacterial infections",
-            real_price:272,
-            prod_price:221
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/112253-1-200.jpg",
-            prod_name:"Roseup HD Capsule (14caps)",
-            prod_descr:"Roseup Hd Capsule is a supplement mainly prescribed in joint and cartilage disorders like osteoarthritis",
-            real_price:741,
-            prod_price:631
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/78655-1-200.jpg",
-            prod_name:"Pan D Capsule (30mg/40mg) (15caps)",
-            prod_descr:"alkem labs",
-            real_price:190,
-            prod_price:162
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/86883-1-200.jpg",
-            prod_name:"Spercus Tablet (10tab)",
-            prod_descr:"Tablets containing micronutrients that helps in well-being of overall health",
-            real_price:557,
-            prod_price:473
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/129077-1-200.jpg",
-            prod_name:"Ccs Eye Drop (10ml)",
-            prod_descr:"Helps in relieving pain and provides comfort in dry eyes by producing artificial tears",
-            real_price:122,
-            prod_price:116
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/73887-1-200.jpg",
-            prod_name:"Creamaghel H-cream (20g)",
-            prod_descr:"Cremagel-H Cream is a medication for the treatment of anal fissures and relieving pain or swelling of anus",
-            real_price:139,
-            prod_price:118
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/104816-1-200.jpg",
-            prod_name:"Aristozyme Capsule (15caps)",
-            prod_descr:"It is used for digestive disorders, starch degrading enzyme, flatulence, distension and other conditions",
-            real_price:72,
-            prod_price:61
-        },
-        {
-            image_url:"https://static.oxinis.com/healthmug/image/product/110617-1-200.jpg",
-            prod_name:"Otrivin Oxy Fast Relief Adult Nasal Spray (10ml)",
-            prod_descr:"Helps in unblocking nasal congestion and lets you breathe easily ",
-            real_price:88,
-            prod_price:88
-        },
-    ]
-   var body = document.querySelector("body");
-   var ads = document.getElementById("ads");
+      <script>
+        var allopyathi = [
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/117616-4-200.jpg",
+                prod_name:"Neurobion Forte Tablet (30tab)",
+                prod_descr:"Helps to counter Vitamin B deficiency, and assists in promoting a healthy nervous system",
+                real_price:34,
+                prod_price:29
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/87220-1-200.jpg",
+                prod_name:"Candid Cream (50g)",
+                prod_descr:"It is used in the treatment of fungal skin infections such as ringworm, athlete’s foot, nappy rash, sweat rash, and vaginal thrush",
+                real_price:153,
+                prod_price:130
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/117573-4-200.jpg",
+                prod_name:"Evion Capsule (400mg) (10caps)",
+                prod_descr:"Assists in managing the levels of Vitamin E in the body, contains anti-oxidants ",
+                real_price:32,
+                prod_price:27
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/127856-1-200.jpg ",
+                prod_name:"Salicylic Acid I.P. (20g)",
+                prod_descr:"Salicylic Acid for better skin and Keratolytictherapy",
+                real_price:70,
+                prod_price:69
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/110693-1-200.jpg",
+                prod_name:"Limcee Chewable Tablet Orange (15tab)",
+                prod_descr:"Orange flavored chewable tablet for boosting immunity and treating deficiency of vitamin C",
+                real_price:23,
+                prod_price:20
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/97147-1-200.jpg ",
+                prod_name:"Shelcal Tablet (15tab)",
+                prod_descr:"Helps in strengthening bones and teeth",
+                real_price:108,
+                prod_price:92
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/112434-3-200.jpg",
+                prod_name:"Refresh Tears Eye Drop (10ml)",
+                prod_descr:"Helps in relieving pain and provides comfort in dry eyes by producing artificial tears",
+                real_price:143,
+                prod_price:122
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/79425-1-200.jpg ",
+                prod_name:"Calcirol Sachet 60K (1g)",
+                prod_descr:"Assists in keeping the bones and teeth strong and healthy",
+                real_price:56,
+                prod_price:48
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/127819-1-200.jpg",
+                prod_name:"Hydrogen Peroxide Solution (100ml)",
+                prod_descr:"Hydrogen Peroxide solution with multiple health benefits",
+                real_price:32,
+                prod_price:31
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/75253-1-200.jpg",
+                prod_name:"Abbott Vitamin A Chewable Tablet (10tab)",
+                prod_descr:"Abbott Vitamin A Chewable Tablet helps in the growth and strength of bone",
+                real_price:7,
+                prod_price:6
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/99350-1-200.jpg",
+                prod_name:"Galact Granules Elaichi (200g)",
+                prod_descr:"It is specially formulated for breast feeding mothers",
+                real_price:383,
+                prod_price:226
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/115352-4-200.jpg",
+                prod_name:"Dexorange Capsule (30caps)",
+                prod_descr:"Helps prevent anemia and helps manage vitamin and iron deficiencies",
+                real_price:141,
+                prod_price:120
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/102286-1-200.jpg ",
+                prod_name:"Becadexamin Soft Gelatin Capsule (30caps)",
+                prod_descr:"It is used to improve your blood circulation, boost your immunity, and help you sleep better",
+                real_price:42,
+                prod_price:36
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/104411-1-200.jpg",
+                prod_name:"Becosules Z Capsule (20caps)",
+                prod_descr:"Helps keep the skin fresh and healthy, assists in boosting the defense system of the body",
+                real_price:45,
+                prod_price:38
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/86288-1-200.jpg",
+                prod_name:"Becozinc Capsule (30caps)",
+                prod_descr:"Helps in weight management, strengthens defense system of body",
+                real_price:47,
+                prod_price:45
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/117572-2-200.jpg",
+                prod_name:"Evion Capsule (200mg) (10caps)",
+                prod_descr:"Assists in managing the levels of Vitamin E in the body, contains anti-oxidants ",
+                real_price:17,
+                prod_price:14
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/94910-1-200.jpg",
+                prod_name:"Revital H Soft Gel Capsule (10caps)",
+                prod_descr:"For daily health and a fresh mind",
+                real_price:110,
+                prod_price:94
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/117646-1-200.jpg",
+                prod_name:"Seven Seas Original Cod Liver Oil Capsule (100caps)",
+                prod_descr:"Codliver oil softgel capsules for overall health and wellbeing",
+                real_price:290,
+                prod_price:247
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/127820-1-200.jpg",
+                prod_name:"Hydrogen Peroxide Solution (400ml)",
+                prod_descr:"Hydrogen Peroxide solution with multiple health benefits",
+                real_price:74,
+                prod_price:73
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/137710-1-200.jpg",
+                prod_name:"Nicotex Chewing Gums Tin Box Sugar Free (4mg) Mint Plus (25pcs)",
+                prod_descr:"Sugar Free nicotine chewing gums to help you quit smoking, comes in a tin box",
+                real_price:259,
+                prod_price:220
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/84252-1-200.jpg",
+                prod_name:"Cipladine Ointment (10g)",
+                prod_descr:"Used for the prevention of infections in wounds and cuts",
+                real_price:26,
+                prod_price:24
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/78518-1-200.jpg",
+                prod_name:"New A to Z Gold Soft Gelatin Capsule (15caps)",
+                prod_descr:"Helps to overcome fatigue, exhaustion, stress, and weakness",
+                real_price:180,
+                prod_price:153
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/112671-1-200.jpg",
+                prod_name:"Zincovit Syrup (200ml)",
+                prod_descr:"Zincovit Syrup helps boost immunity and prevent and manage nutritional deficiencies",
+                real_price:135,
+                prod_price:115
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/86428-1-200.jpg",
+                prod_name:"Econorm Sachet (1Sachet)",
+                prod_descr:"Helps in treating diarrhea and restores balance of bacteria in stomach",
+                real_price:52,
+                prod_price:44
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/94914-1-200.jpg",
+                prod_name:"Revital H Woman Tablet (30tab)",
+                prod_descr:"For a healthy and strong woman with a fresh mind",
+                real_price:345,
+                prod_price:297
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/84334-3-200.jpg",
+                prod_name:"Clocip Dusting Powder (100g)",
+                prod_descr:"anti-fungal powder to treat infections and rashes",
+                real_price:116,
+                prod_price:113
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/127857-1-200.jpg",
+                prod_name:"Salicylic Acid I.P. (400g)",
+                prod_descr:"Salicylic Acid for better skin and Keratolytictherapy",
+                real_price:580,
+                prod_price:568
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/137438-1-200.jpg",
+                prod_name:"Nicotex Chewing Gums Sugar Free (4mg) Mint Plus (9pcs)",
+                prod_descr:"Sugar free nicotine chewing gums that helps you quit smoking",
+                real_price:96,
+                prod_price:82
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/110613-3-200.jpg",
+                prod_name:"Ostocalcium B12 Child Syrup Banana (200ml)",
+                prod_descr:"Ostocalcium B12 Child Syrup Banana (200ml)",
+                real_price:158,
+                prod_price:128
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/112670-1-200.jpg",
+                prod_name:"Zincovit Drop (15ml)",
+                prod_descr:"Zincovit Drops is a multi-vitamin which make it an important dietary supplement for the growth of children",
+                real_price:50,
+                prod_price:43
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/135283-1-200.jpg",
+                prod_name:"Digene Tablet Mint (15tab)",
+                prod_descr:"Abbott Digene Tablet helps to relieve symptoms of extra gas such as bloating and feeling of discomfort in the stomach",
+                real_price:19,
+                prod_price:16
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/86249-1-200.jpg",
+                prod_name:"Antoxid HC Soft Gelatin Capsule (30caps)",
+                prod_descr:"Helps to protect skin by reducing oxidative stress, improves vision",
+                real_price:487,
+                prod_price:414
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/137288-1-200.jpg",
+                prod_name:"Prolyte ORS Ready To Drink Apple (200ml)",
+                prod_descr:"ORS ready to drink supplement for cases of vomiting, diarrhea or loss of liquids",
+                real_price:29,
+                prod_price:25
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/105072-2-200.jpg",
+                prod_name:"Meganeuron OD Plus Capsule (10caps)",
+                prod_descr:"It is a medicine which has a combination of medicines that is used in the treatment of vitamin and mineral deficiencies",
+                real_price:129,
+                prod_price:110
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/100856-2-200.jpg",
+                prod_name:"Corcium Tablet (15tab)",
+                prod_descr:"Calcium Tablets for healthy and strong bones, support nerve functions",
+                real_price:174,
+                prod_price:148
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/108652-4-200.jpg",
+                prod_name:"dolo tab (15 tab)",
+                prod_descr:"For managing raised body temperatures and helping relieve body pain",
+                real_price:30,
+                prod_price:26
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/84829-1-200.jpg",
+                prod_name:"Ibugesic ASP Tablet (10tab)",
+                prod_descr:"cipla",
+                real_price:71,
+                prod_price:60
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/110615-2-200.jpg",
+                prod_name:"Ostocalcium Plus Chewable Tablet (30tab)",
+                prod_descr:"Calcium and Vitamin d3 chewable tablets for strong bones and body",
+                real_price:178,
+                prod_price:151
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/98459-1-200.jpg",
+                prod_name:"Tryptomer Tablet (10mg) (30tab)",
+                prod_descr:"Wockhardt Ltd",
+                real_price:76,
+                prod_price:65
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/137436-1-200.jpg",
+                prod_name:"Nicotex Chewing Gums Sugar Free (4mg) Paan (9pcs)",
+                prod_descr:"Sugar free nicotine chewing gums that helps you quit smoking",
+                real_price:105,
+                prod_price:89
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/94911-2-200.jpg",
+                prod_name:"Revital H Soft Gel Capsule (30caps)",
+                prod_descr:"For daily health and a fresh mind",
+                real_price:310,
+                prod_price:264
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/105067-1-200.jpg",
+                prod_name:"Megaheal Gel (50g)",
+                prod_descr:"Megaheal Gel acts as an antiseptic and skin disinfectant that helps in preventing bacterial infections",
+                real_price:272,
+                prod_price:221
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/112253-1-200.jpg",
+                prod_name:"Roseup HD Capsule (14caps)",
+                prod_descr:"Roseup Hd Capsule is a supplement mainly prescribed in joint and cartilage disorders like osteoarthritis",
+                real_price:741,
+                prod_price:631
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/78655-1-200.jpg",
+                prod_name:"Pan D Capsule (30mg/40mg) (15caps)",
+                prod_descr:"alkem labs",
+                real_price:190,
+                prod_price:162
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/86883-1-200.jpg",
+                prod_name:"Spercus Tablet (10tab)",
+                prod_descr:"Tablets containing micronutrients that helps in well-being of overall health",
+                real_price:557,
+                prod_price:473
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/129077-1-200.jpg",
+                prod_name:"Ccs Eye Drop (10ml)",
+                prod_descr:"Helps in relieving pain and provides comfort in dry eyes by producing artificial tears",
+                real_price:122,
+                prod_price:116
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/73887-1-200.jpg",
+                prod_name:"Creamaghel H-cream (20g)",
+                prod_descr:"Cremagel-H Cream is a medication for the treatment of anal fissures and relieving pain or swelling of anus",
+                real_price:139,
+                prod_price:118
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/104816-1-200.jpg",
+                prod_name:"Aristozyme Capsule (15caps)",
+                prod_descr:"It is used for digestive disorders, starch degrading enzyme, flatulence, distension and other conditions",
+                real_price:72,
+                prod_price:61
+            },
+            {
+                image_url:"https://static.oxinis.com/healthmug/image/product/110617-1-200.jpg",
+                prod_name:"Otrivin Oxy Fast Relief Adult Nasal Spray (10ml)",
+                prod_descr:"Helps in unblocking nasal congestion and lets you breathe easily ",
+                real_price:88,
+                prod_price:88
+            },
+        ]
+    var body = document.querySelector("body");
+    var ads = document.getElementById("ads");
     var allotrophy = document.createElement("div");
-    allotrophy.setAttribute("class", "container");
+        allotrophy.setAttribute("class", "container");
 var head = document.createElement("h2");
 head.textContent = "ALLOPATHY";
 body.append(head,allotrophy);
 allotrophyShow();
+
 function   allotrophyShow() {
 allopyathi.map(function (item) {
-     var strike = document.createElement("s");
+
+var strike = document.createElement("s");
+
 var imageDiv = document.createElement("div");
+imageDiv.setAttribute("class","product");
+
 var img = document.createElement("img");
+img.setAttribute("class","medicine");
+
 var anchor = document.createElement("a");
 anchor.setAttribute("href","");
 img.setAttribute("src", item.image_url);
-var name  = document.createElement("h3");
+
+var name  = document.createElement("p");
+name.setAttribute("class","name")
 name.textContent = item.prod_name
-var description  = document.createElement("h3");
+
+var description  = document.createElement("p");
 description.textContent = item.prod_descr;
+
 var real_price  = document.createElement("span");
-real_price.textContent = item.real_price;
-strike.append(real_price)
+real_price.setAttribute("class","strike")
+real_price.textContent = "₹" + item.real_price;
+strike.append(real_price);
+
 var price  = document.createElement("span");
+price.textContent = "₹" + item.prod_price;
+
 var discount = document.createElement("span");
-discount.textContent = "15%"
-discount.style.color = "white";
-discount.style.backgroundColor = "green";
-price.textContent = item.prod_price;
-var cartIcon = document.createElement("img");
-cartIcon.setAttribute("class","icon")
+discount.setAttribute("class","discount");
+
 imageDiv.addEventListener("mouseenter", function(){
-  imageDiv.style.boxShadow = "3px 3px 3px rgb(171, 171, 171) ";
-  
-
-cartIcon.setAttribute("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjeqJ6JoPpzJIDRClTtSjehcfb0_QMShv6Zg&usqp=CAU");
-  cartIcon.style.visibility = "visible";
+imageDiv.style.boxShadow = "3px 3px 3px rgb(171, 171, 171) ";
 });
-imageDiv.addEventListener("mouseleave", function(){
-  imageDiv.style.boxShadow = "none";
-  
-cartIcon.setAttribute("src","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjeqJ6JoPpzJIDRClTtSjehcfb0_QMShv6Zg&usqp=CAU");
-  cartIcon.style.visibility = "hidden";
 
-})
-imageDiv.append( img, name,description,price,strike,discount);
-anchor.append(cartIcon,imageDiv);
+imageDiv.addEventListener("mouseleave", function(){
+imageDiv.style.boxShadow = "none";
+});
+
+
+var icon = document.createElement("i");
+icon.setAttribute("class","fa fa-shopping-cart");
+
+imageDiv.append(icon,img, name,description,price,strike,discount);
+anchor.append(imageDiv);
 allotrophy.append(anchor);
 });
- 
+
 }
 </script>
+</body>
+</html>
