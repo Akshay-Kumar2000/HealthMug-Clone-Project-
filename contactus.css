@@ -1,0 +1,109 @@
+#iframe{
+     display: flex;
+}
+*{
+     font-family: Roboto, sans-serif;
+     background-color: rgb(241, 240, 240);
+     font-size: auto;
+ }
+ #iframe>div{
+      width: 50%;
+ }
+ #contactus{
+      margin-left: 2%;
+ }
+ #contactus form{
+      color: rgb(84, 84, 84);
+      font-size: 20%;
+ }
+ #contactus input{
+      border: 1px rgb(160, 160, 160) solid;
+}
+ #contactus input[type="text"]{
+      display: table-row;
+      margin-left: 17.5%;
+      height: 40px;
+      width: 60%;
+      background-color: white;
+ }
+ #contactus input[type="email"]{
+     margin-top: 5%;
+      margin-left: 18%;
+      height: 40px;
+      width: 60%;
+      background-color: white;
+}
+#contactus input[type="number"]{
+     margin-top: 5%;
+     margin-left: 14.2%;
+     height: 40px;
+     width: 60%;
+     background-color: white;
+}
+#contactus input[type="radio"]{
+     margin-top: 5%;
+     margin-left: 8%;
+     height: 20px;
+     width: 40px;
+     background-color: white;
+}
+#contactus input:last-of-type{
+     margin-top: 3%;
+     margin-left: 15%;
+     height: 110px;
+     width: 60%;
+     background-color: white;
+}
+#contactus button{
+     margin-top: 30px;
+     margin-left: 22%;
+     height: 60px;
+     width: 30%;
+     background-color: rgb(62, 154, 106);
+     border-radius: 4%;
+     border: none;
+     color: white;
+     font-size: 20%;
+}
+#contactus button:hover{
+     background-color: rgb(0, 83, 50);
+}
+#contactus h3,#contactus h2{
+     color: rgb(80,80,80);
+}
+.addresss{
+     display: inline-block;
+     width: 25%;
+     height: 150px;
+     color: rgb(73, 72, 72);
+     vertical-align: top;
+}
+.fa-facebook-f{
+     border-radius: 45%;
+     height: 30px;
+     width: 30px;
+     text-align: center;
+     margin-top: 20px;
+     font-size:24px; color: white;background-color: blue;
+}
+.fa-twitter{
+     border-radius: 45%;
+     height: 30px;
+     width: 30px;
+     text-align: center;
+     margin-top: 20px;
+     font-size:24px;color: white;background-color: rgb(0, 187, 255);
+     margin-left: 10px;
+}
+.fa-facebook-f:hover{
+     background-color: white;
+     border: 2px blue solid ;
+     color: blue;
+}
+.fa-twitter:hover{
+     background-color: white;
+     border: 2px rgb(0, 221, 255) solid ;
+     color: rgb(0, 221, 255);
+}
+ 
+ 
