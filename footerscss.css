@@ -39,7 +39,7 @@ div {
 /* footer coloumns policies  */
 
 .maxContainerFooter {
-  width: 112%;
+  width: 110%;
   justify-content: center;
   background-color: #0b7670;
 }
@@ -105,7 +105,7 @@ div {
 }
 
 .textBox {
-  margin-left: 32%;
+  margin-left: 29%;
   line-height: 0%;
 }
 .textBox p {
@@ -121,7 +121,7 @@ div {
 
 .prodTypes {
   width: 112%;
-  height: 797px;
+  height: 730px;
   background-color: rgb(81, 201, 166);
 }
 
@@ -141,7 +141,7 @@ div {
   color: rgb(204, 248, 235);
   font-size: 13px;
 }
-.linkContainer span > a:hover {
+.linkContainer a:hover {
   text-decoration: underline;
   text-decoration-color: white;
 }
