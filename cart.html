@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="cart.css" />
+</head>
+
+<body>
+    <!-- bluring background -->
+
+    <div id="blur_background"></div>
+
+
+    <!-- cart -->
+
+
+    <div id="shopping">
+        <h3 style="text-align: right;color:#C9C4BD" onclick="cart_close()"><i class="fas fa-times"></i></h3>
+        <h2><span>Shopping Cart</span><span id="add_more">(0 items)</span></h2>
+        <br>
+        <table id="shopping_cart">
+            <thead>
+                <tr>
+                    <td>Item</td>
+                    <td>Quantity</td>
+                    <td>Price</td>
+                    <td>
+                        <form id="check_pincode">
+                            <labe>Check for Delivery</labe><input type="number" id="pincode"
+                                placeholder="Pincode"><button type="submit">Check</button>
+                        </form>
+                    </td>
+                    <td>Sub Total</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="5" id="add_to_cart">
+                        <img src="https://static.oxinis.com/healthmug/image/healthmug/cart.jpg" alt="shopping cart">
+                        <br>
+                        <h2>Your Cart is Empty</h2>
+                        <h3 class="add_some_stuff">Add Some Stuff</h3>
+                        <button class="cart_button_color" onclick="cart_close()">
+                            <h3>Continue Shopping</h3>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="bottom_shoping_cart">
+            <div>
+                <h6>Safe Buy: 100% Money Back Guarantee</h6>
+                <h6>Live Easy: 15 Days Easy Return Policy</h6>
+                <h6>Top Notch: Genuine Products Guarantee</h6>
+            </div>
+            <div id="cart_total_table">
+                <table>
+                    <tr id="total">
+                        <td>total:</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery Charge:</td>
+                        <td>50</td>
+                    </tr>
+                    <tr id="grand_total_cart">
+                        <td>
+                            <h3>Grand total</h3>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="bottom_shopping_cart_button">
+            <button class="cart_button_color">
+                <h3>Place Order <i class="fas fa-angle-right"></i></h3>
+            </button>
+            <button onclick="cart_close()">
+                <h3>Continue Shopping</h3>
+            </button>
+        </div>
+    </div>
+</body>
+
+<script src="cart.js"></script>
+
+</html>
