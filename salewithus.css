@@ -41,6 +41,7 @@ div {
 select {
   height: 34px;
   width: 205px;
+  color: rgb(80, 80, 80);
 }
 
 .salesForm label {
