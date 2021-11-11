@@ -1,15 +1,21 @@
           body{
                background-color: rgb(244, 244, 244);
+               font-family: Roboto, sans-serif;
           }
           #checkouttop{
                background-color: rgb(81, 201, 166);
-               display: grid;
-               grid-template-columns: 400px auto auto auto ;
+               width: auto;
+               display: grid;  
+               grid-template-columns: 30% 20% 2% auto ;
+               grid-gap: 20px;
           }
           #checkouttop>.help{
-               margin-top: 14px;
+               margin-top: 5%;
                margin-left: -50px;
                color: white;
+          }
+          #checkouttop img{
+               width:80% ;
           }
           #checkoutbody td label,#checkoutbody td input{
                width: 180%;
@@ -17,6 +23,7 @@
           }
           #checkoutbody{
                background-color: rgb(255, 255, 255) ;
+               box-shadow: 6px 6px 10px rgb(235, 235, 235);
           }
           #checkoutbody table {
               margin-top: 60px;
@@ -68,6 +75,9 @@
           #deliveryadr1 {
                display: inline-block;
           }
+          .deliveryadr:hover {
+               background-color: rgb(225, 225, 225);
+          }
           #deliveryadr2{
                background-color: rgb(251, 137, 3);
                width: 100%;
@@ -85,11 +95,72 @@
           }
           #deliveryadr1email span{
                color: rgb(149, 149, 149);
-               
           }
           #deliveryadr1email #mail{
                color: black;
           }
           #deliveryadr3 h2{color: rgb(187, 186, 186);}
           #deliveryadr4 h2{color: rgb(187, 186, 186);}
-
+          #checkouttop .checkouticon span {
+               color:rgb(179, 245, 204);
+               font-size: 12px;
+           }
+           .checkouticoncont{
+                display: grid;
+                grid-template-columns: 25% 25% 25% 25% ;
+                float: right;
+                grid-gap: 0%;
+                margin-top: 0%;
+           }
+           #checkoutchangemail{
+                float: right;
+                margin-right: 5%;
+                margin-top: 40px
+           }
+           
+           #checkoutbody button:hover{
+               background-color:rgb(225,225,225);
+          }
+           #checkoutcart{
+                margin-top: 20px;
+                display: grid;
+                grid-template-columns: auto auto auto auto auto;
+                color: rgb(189, 189, 189) ;
+           }
+           .pradio{
+                width: 20px;
+                height:20px;
+                background-color:rgb(91, 181, 126) ;
+                border-radius: 50%;
+                margin-top: 50px;
+                margin-left: 30px;
+                display: inline-block;
+           }
+           .carddetail{
+                display: inline-block;
+                margin-left: 5%;
+                vertical-align: baseline;
+           }
+           .cardtype{
+                color: rgb(129, 129, 129);
+                margin-left: 9.5%;
+                margin-top: .5%;
+           }
+           .cards img{
+                width: 40px;
+                height: 25px;
+                display: inline-block;
+                margin-left: 1%;
+           }
+           .cards #img1{
+               margin-left: 9%;
+          }
+          .buttonpay{
+               float: right;
+               width: 200px;
+               height: 50px;
+               margin-top: -50px;
+               margin-right: 50px;
+               background-color: rgb(91, 181, 126);
+               border: none;
+          }
