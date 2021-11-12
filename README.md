@@ -8,7 +8,7 @@
 - Requirment & Refrence
 - Configuration
 - Maintainers
-- About us
+- About Us
 
 
 
