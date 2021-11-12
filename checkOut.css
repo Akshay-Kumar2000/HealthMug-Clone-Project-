@@ -220,8 +220,12 @@
   padding-left: 10px;
   font-family: Roboto, sans-serif;
   font-size: 16px;
-  /* line-height: 18.5714px; */
   font-weight: 500;
+  color: white;
+}
+
+.orderSummary a {
+  text-decoration: none;
   color: white;
 }
 
@@ -230,3 +234,4 @@
   color: grey;
   margin-left: 45%;
 }
+
