@@ -217,6 +217,11 @@
   color: white;
 }
 
+.orderSummary a {
+  text-decoration: none;
+  color: white;
+}
+
 .copyRight p {
   font-size: 12px;
   color: grey;
