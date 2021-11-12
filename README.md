@@ -13,7 +13,7 @@
 
 
 ## Introduction:
-This project is Actually a dummy websites of HealthMug websites , it is like clone.
+This project is Actually a dummy website of HealthMug websites , it is like clone.
 
 
 
@@ -22,10 +22,10 @@ This project is Actually a dummy websites of HealthMug websites , it is like clo
 
 
 ## Requirment && Referance :-
-To make this clone we Need data of product so , firstly we collect the data from website . Also for the sliding part and some css part we was taking help from google .   
+To make this clone we Need data of product so , firstly we collect the data from website . Also for the sliding part and some css part we was taking Help from google .   
 
 ## Configuration:-
-we made homepage first after that there are 6 subpages according to products like allopathi ,homeopathi ,ayureda , etc. and we made many more subpages in that pages like log in , sign in , cart etc.
+We made homepage first after that there are 6 subpages according to products like allopathi ,homeopathi ,ayureda , etc. and we made many more subpages in that pages like log in , sign in , cart etc.
   ### -->homepage :-
   for the naviagation bar and search we had given several function for this header , after that for this sliding images we use slideshow by increamenting slide length. same process we are use also in sliding products .
   remaining is just a html and css.
@@ -40,8 +40,8 @@ we had make sign in page , log in , cart page , product page , payment page , co
 ## Maintainers :-
 1. Akshay (Team Leader)
 2. Sandeep 
-3. Adity
-4. Shivandam
+3. Aditya
+4. Sivanandam
 5. Dinesh
 6. Saiprasad
 
