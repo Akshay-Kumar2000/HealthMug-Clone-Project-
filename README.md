@@ -37,8 +37,8 @@ We made homepage first after that there are 6 subpages according to products lik
 we had make sign in page , log in , cart page , product page , payment page , contact page , checkout page ,sale page , etc and give them proper java function ..
 
 
-## Maintainers :-
-1. Akshay (Team Leader)
+## Contributors :-
+1. Akshay 
 2. Sandeep 
 3. Aditya
 4. Sivanandam
@@ -47,7 +47,7 @@ we had make sign in page , log in , cart page , product page , payment page , co
 
 
 ## About Us :-
-   We are a student of Masai school . This is our first project . We had a task to make HealthMug Website clone and We done this job in just 8 days . We had 6 Members team . We was trying our best to complet this Project.
+   We are a student of Masai school . This is our first project . We had a task to make HealthMug Website clone. We had 6 Members in our team . Every member of our team tried there best.
 
 
            
